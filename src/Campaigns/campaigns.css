@@ -1,0 +1,82 @@
+li {
+  list-style: none; }
+
+.campaigns {
+  font-family: Verdana; }
+  .campaigns nav.navbar {
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 4px 14px 14px 14px;
+    margin-top: 10px;
+    justify-content: flex-start; }
+    .campaigns nav.navbar .navbar-nav {
+      margin-top: 10px;
+      flex-direction: row; }
+    .campaigns nav.navbar .dropdown {
+      width: 180px;
+      text-align: right; }
+      .campaigns nav.navbar .dropdown a {
+        padding-right: 20px; }
+    .campaigns nav.navbar a.dropdown-toggle {
+      border: 1px solid #ddd;
+      border-radius: 5px; }
+    .campaigns nav.navbar button span.navbar-toggler-icon {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
+    .campaigns nav.navbar span.navbar-state {
+      color: #777;
+      font-size: 16px; }
+    .campaigns nav.navbar .navbar-current-state, .campaigns nav.navbar .hamburger {
+      margin: 10px; }
+      @media (max-width: 768px) {
+        .campaigns nav.navbar .navbar-current-state, .campaigns nav.navbar .hamburger {
+          margin: 2px; } }
+    .campaigns nav.navbar .hamburger {
+      color: #777;
+      margin-left: 30px; }
+      @media (max-width: 768px) {
+        .campaigns nav.navbar .hamburger {
+          margin-left: 10px; } }
+  .campaigns .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; }
+
+.date-picker {
+  color: #F5495B;
+  margin: 0px 10px;
+  padding: 0px 10px; }
+  @media (max-width: 768px) {
+    .date-picker {
+      margin: 0px 2px;
+      padding: 0px 2px; } }
+  .date-picker .date-range {
+    background-color: #F5495B;
+    border-radius: 14px;
+    padding: 4px 10px;
+    margin: 0px 10px;
+    color: #fff;
+    font-size: 12px; }
+  .date-picker .selected-date {
+    padding: 0px 10px;
+    margin: 0px 10px; }
+    @media (max-width: 768px) {
+      .date-picker .selected-date {
+        padding: 0px 4px;
+        margin: 0px 4px; } }
+    .date-picker .selected-date .date-text {
+      margin-left: 5px; }
+
+.card.create-a-card {
+  height: 350px;
+  width: 260px;
+  border-radius: 5px;
+  border: 3px dotted #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none;
+  color: #ccc; }
+  .card.create-a-card div {
+    margin: 10px; }

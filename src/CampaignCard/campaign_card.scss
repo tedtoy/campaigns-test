@@ -1,0 +1,135 @@
+
+.card {
+  margin: 40px 0px;
+  margin-right: 25px;
+  width: 250px;
+  box-shadow: 3px 3px 5px 1px #ddd;
+
+  img {
+    height: 160px;
+  }
+
+  h5.card-title {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .details {
+    font-size: 13px;
+    color: #aaa;
+    .detail-info {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 6px;
+      .status {
+        display: flex;
+        align-items: center;
+        font-size: 11px;
+        .dot {
+          width: 8px;
+          height: 8px;
+          margin-left: 5px;
+          border-radius: 50%;
+        }
+      }
+    }
+    .detail-bar {
+      height: 8px;
+      width: 100%;
+    }
+    .saved {
+      background-color: #f4f4f4;
+    }
+    .pending {
+      background-color: #eee;
+    }
+    .active {
+      background-color: #4fe02f;
+    }
+    .paused {
+      background-color: #baedef;
+    }
+    .declined {
+      background-color: #e22860;
+    }
+    .terminated {
+      background-color: #ffbabc;
+    }
+    .expired {
+      background-color: #998b8d;
+    }
+  }
+  .options-container {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    .toggle-options {
+      background-color: #eee;
+      cursor: pointer;
+      width: 27px;
+      height: 27px;
+      border: 1px solid #bbb;
+      color: #999;
+    }
+
+    .menu-options {
+      width: 130px;
+      background-color: #fcfcfc;
+      border: 1px solid #ddd;
+      .option {
+        text-align: left;
+        margin: 0px;
+        padding: 4px 10px;
+        font-size: 14px;
+        color: #444;
+        cursor: pointer;
+        .icon {
+          margin-right: 6px;
+        }
+      }
+      .option:not(:last-child) {
+        border-bottom: 1px solid #ddd;
+      }
+      .option:hover {
+        background-color: #eee;
+      }
+    }
+
+  }
+  .options-container.show {
+    display: flex;
+  }
+  .card-footer {
+    border-top: 0px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color: #999;
+  }
+  .loading {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.card:hover {
+  .options-container {
+    display: flex;
+    .toggle-options:active {
+      background-color: #ddd;
+    }
+  }
+}

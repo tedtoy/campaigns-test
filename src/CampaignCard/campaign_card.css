@@ -1,0 +1,99 @@
+.card {
+  margin: 40px 0px;
+  margin-right: 25px;
+  width: 250px;
+  box-shadow: 3px 3px 5px 1px #ddd; }
+  .card img {
+    height: 160px; }
+  .card h5.card-title {
+    font-size: 16px;
+    text-align: left; }
+  .card .details {
+    font-size: 13px;
+    color: #aaa; }
+    .card .details .detail-info {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 6px; }
+      .card .details .detail-info .status {
+        display: flex;
+        align-items: center;
+        font-size: 11px; }
+        .card .details .detail-info .status .dot {
+          width: 8px;
+          height: 8px;
+          margin-left: 5px;
+          border-radius: 50%; }
+    .card .details .detail-bar {
+      height: 8px;
+      width: 100%; }
+    .card .details .saved {
+      background-color: #f4f4f4; }
+    .card .details .pending {
+      background-color: #eee; }
+    .card .details .active {
+      background-color: #4fe02f; }
+    .card .details .paused {
+      background-color: #baedef; }
+    .card .details .declined {
+      background-color: #e22860; }
+    .card .details .terminated {
+      background-color: #ffbabc; }
+    .card .details .expired {
+      background-color: #998b8d; }
+  .card .options-container {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 8px;
+    right: 8px; }
+    .card .options-container .toggle-options {
+      background-color: #eee;
+      cursor: pointer;
+      width: 27px;
+      height: 27px;
+      border: 1px solid #bbb;
+      color: #999; }
+    .card .options-container .menu-options {
+      width: 130px;
+      background-color: #fcfcfc;
+      border: 1px solid #ddd; }
+      .card .options-container .menu-options .option {
+        text-align: left;
+        margin: 0px;
+        padding: 4px 10px;
+        font-size: 14px;
+        color: #444;
+        cursor: pointer; }
+        .card .options-container .menu-options .option .icon {
+          margin-right: 6px; }
+      .card .options-container .menu-options .option:not(:last-child) {
+        border-bottom: 1px solid #ddd; }
+      .card .options-container .menu-options .option:hover {
+        background-color: #eee; }
+  .card .options-container.show {
+    display: flex; }
+  .card .card-footer {
+    border-top: 0px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color: #999; }
+  .card .loading {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+.card:hover .options-container {
+  display: flex; }
+  .card:hover .options-container .toggle-options:active {
+    background-color: #ddd; }

@@ -1,0 +1,114 @@
+li {
+  list-style: none; // Bootstrap displaying bullets for some reason.
+}
+
+
+$red: #F5495B;
+
+
+.campaigns {
+  font-family: Verdana;
+  nav.navbar {
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 4px 14px 14px 14px;
+    margin-top: 10px;
+    justify-content: flex-start;
+    .navbar-nav {
+      margin-top: 10px;
+      flex-direction: row;
+      @media (max-width: 768px) {
+
+      }
+    }
+    .dropdown {
+      width: 180px;
+      text-align: right;
+      a {
+        padding-right: 20px;
+      }
+    }
+    a.dropdown-toggle {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    button {
+      span.navbar-toggler-icon {
+          background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+      }
+    }
+    span.navbar-state {
+      color: #777;
+      font-size: 16px;
+    }
+    .navbar-current-state, .hamburger {
+      margin: 10px;
+
+      @media (max-width: 768px) {
+          margin: 2px;
+      }
+    }
+    .hamburger {
+      color: #777;
+      margin-left: 30px;
+      @media (max-width: 768px) {
+          margin-left: 10px;
+      }
+    }
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+}
+
+
+.date-picker {
+  color: $red;
+  margin: 0px 10px;
+  padding: 0px 10px;
+
+  @media (max-width: 768px) {
+    margin: 0px 2px;
+    padding: 0px 2px;
+  }
+  .date-range {
+    background-color: $red;
+    border-radius: 14px;
+    padding: 4px 10px;
+    margin: 0px 10px;
+    color: #fff;
+    font-size: 12px;
+  }
+  .selected-date {
+    padding: 0px 10px;
+    margin: 0px 10px;
+    @media (max-width: 768px) {
+      padding: 0px 4px;
+      margin: 0px 4px;
+    }
+    .date-text {
+      margin-left: 5px;
+    }
+  }
+}
+
+.card.create-a-card {
+  height: 350px;
+  width: 260px;
+  border-radius: 5px;
+  border: 3px dotted #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none;
+  color: #ccc;
+  div {
+    margin: 10px;
+  }
+}
