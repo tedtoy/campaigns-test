@@ -13,3 +13,7 @@ npm start will run the webpack server included with create-react-app, start the 
 
 
 I am using localhost:3000 for the webpack server and localhost:8080 for the express server. Make sure those ports are open before running!
+
+It should look like this:
+
+![alt text](https://github.com/tedtoy/campaigns-test/blob/master/campaign-screenshot.png)
