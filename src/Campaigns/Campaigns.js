@@ -50,7 +50,7 @@ class Campaigns extends Component {
   }
 
   componentWillMount = () => {
-    console.log("API URL", API_URL)
+
     fetch(API_URL)
     .then((resp) => {
       resp.json().then((data) => {
